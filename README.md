@@ -1,1 +1,1 @@
-My Git and GitHub Practice Project
+Release Version 1.0
