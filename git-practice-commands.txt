@@ -1,0 +1,74 @@
+vighn@DELL UCRT64 ~/git-classroom-practice (main|MERGING)
+$ git add .
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main|MERGING)
+$ git commit -m "Update two files in main branch"
+[main 5ee53a7] Update two files in main branch
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vighneshnaik18/git-classroom-practice.git
+   f60fb46..5ee53a7  main -> main
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git merge release
+Already up to date.
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git push origin main
+Everything up-to-date
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git branch -d feature
+Deleted branch feature (was f38a97d).
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git branch
+* main
+  release
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git  branch -a
+* main
+  release
+  remotes/origin/feature
+  remotes/origin/main
+  remotes/origin/release
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git chekout main
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git branch -d feature
+error: branch 'feature' not found
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git push origin --delete feature
+To https://github.com/vighneshnaik18/git-classroom-practice.git
+ - [deleted]         feature
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ git branch -a
+* main
+  release
+  remotes/origin/main
+  remotes/origin/release
+
+vighn@DELL UCRT64 ~/git-classroom-practice (main)
+$ 
